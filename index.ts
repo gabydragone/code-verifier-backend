@@ -21,6 +21,10 @@ app.get('/hello', (req: Request, res: Response) => {
     res.send('Welcome to GET Route: Hello! ')
 });
 
+app.get('/goodbye', (req: Request, res: Response) => { 
+    // Send Hello World
+    res.status(200).send('Goodby, world')
+});
 
 
 
